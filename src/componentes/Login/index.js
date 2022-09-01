@@ -1,14 +1,17 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { Button, Text, StyleSheet, SafeAreaView } from 'react-native'
 
-export default function Login(props) {
+export default function Login() {
+  const navigation = useNavigation()
+
   return (
     <SafeAreaView style={estilo.container}>
       <Text style={estilo.title}>Tela Inicial</Text>
       <Button
         style={estilo.button}
         title="Home"
-        onPress={() => props.navigation.navigate('Home')}
+        onPress={() => navigation.navigate('Home1')}
       />
     </SafeAreaView>
   )

@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Login from '../Login'
 import Home from '../Home'
 
+import TabNav from './TabNav'
+
 const Stack = createStackNavigator()
 
 export default function StackNav() {
@@ -16,7 +18,7 @@ export default function StackNav() {
           headerShown: false
         }}
       />
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Home1" component={TabNav} />
     </Stack.Navigator>
   )
 }
